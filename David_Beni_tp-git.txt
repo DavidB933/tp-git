@@ -28,7 +28,7 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 
 
-Créer le fichier fichier1.mdavec un contenu quelconque et sl'enregistrer
+Créer le fichier fichier1.mdavec un contenu quelconque et l'enregistrer
 	touch fichier1.md
 
 Créer le fichier fichier2.mdavec un contenu quelconque et l'enregistrer
@@ -87,24 +87,46 @@ Modifier fichier1.mdet enregistrer
 
 Exécuter git statuset copier/coller la sortie
 	
+	On branch master
+Your branch is up to date with 'origin/master'.
 
-Ajouter fichier1.mdet fichier2.mdà la zone de Staging
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   David_Beni_tp-git.txt
+        modified:   fichier2.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+Ajouter fichier1.md et fichier2.md à la zone de Staging
+	git add fichier1.md
+	git add fichier2.md
+
 
 Créer un commit "Ajout de fichier2.md et modification de fichier1.md"
+	git commit -m"Ajout de fichier2.md et modification de fichier1.md"
 
-Copier/coller l'ID des deux premiers s'engage :
 
-ID commit 1 :
+Copier/coller l'ID des deux premiers commit :
 
-ID commit 2 :
+ID commit 1 : commit 31b7dbac0b0f5dacb9d46e5df7be3c7457d430d3
+
+ID commit 2 : commit 146de3b743e0b943c36d9066cd99be39cea000fc
+
 
 Que signifie qu'un fichier est " tracked " ou " untracked " ?
+	Tracked : Configuré
+	Untracked : Non-configuré
 
 Pourquoi doit-on passer les fichiers par la zone de Staging (l'index) avant de les committer ?
+	
 
-Créer une succursalefonctionnalite1
+Créer une branche fonctionnalite1
+	git branch fonctionnalite1
 
-Lister les succursales
+Lister les branches
+	
 
 Se déplacer sur la branchefonctionnalite1
 
