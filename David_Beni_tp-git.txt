@@ -274,11 +274,29 @@ Créer un nouveau fichier fichier5.md
 	touch fichier5.md
 
 Faire un commit en incluant cet ajout : "Ajout fichier5.md"
+	git add David_Beni_tp-git.txt
+	git add fichier5.md
+	git commit -m"fichier5.md créé"
+
+Entrer la commande git log --oneline --decorate --graph --all pour visualiser, 
+sur le terminal, le graphe des commits sur toutes les branches
+	git log --oneline --decorate --graph --all
+	Ce que le terminal me renvoit : 
+* cf0a600 (HEAD -> fonctionnalite2) fichier5.md créé
+* 5efb2db (master) Fichier réponse David_Beni_tp-git.txt mis à jour
+* 10facd4 (origin/master) Avancé sur le TP-GIT, rapport mis à jour
+| * 7c48f55 (fonctionnalite1) Pour changer de branche
+| * 7d357b7 Fonctionnalité 1 - terminée
+| * 966ee6d Fonctionnalité 1 - première phase
+| * df001f6 (origin/fonctionnalite1) fichier3.md ajouté, fichier2.md modifié
+|/
+* 62a34c2 Ajout de fichier2.md et modification de fichier1.md
+* 2de1bb8 Premier enregistrement test
+* 146de3b Etape fichier1.md modifé et enregistré
+* 31b7dba Ajout de fichier1.md
+
+Noter la « déviation » entre les deux branches, à partir de la branche master
 	
-
-Entrer la commande git log --oneline --decorate --graph --allpour visualiser, sur le terminal, le graphe des commits sur toutes les branches
-
-Noter la « déviation » entre les deux branches, à partir de la branchemaster
 
 Installer l'extension VS Code Git Graph et visualiser le graphe actuel des commits à l'aide de cette extension
 
