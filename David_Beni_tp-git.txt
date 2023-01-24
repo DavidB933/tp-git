@@ -126,7 +126,40 @@ Créer une branche fonctionnalite1
 	git branch fonctionnalite1
 
 Lister les branches
-	
+	git log --all
+	Ce que ça affiche : 
+commit 10facd431606d5b479313da6a91590e3e587294d (HEAD -> master, origin/master)
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 17 12:11:59 2023 +0100
+
+    Avancé sur le TP-GIT, rapport mis à jour
+
+commit 62a34c26a28ee2dcdca87401b36e6e465bdd7073 (fonctionnalite1)
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 17 11:04:14 2023 +0100
+
+    Ajout de fichier2.md et modification de fichier1.md
+
+commit 2de1bb893c3d3ad63524a940c445f93d642f02f8
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 17 10:48:57 2023 +0100
+
+    Premier enregistrement test
+
+commit 146de3b743e0b943c36d9066cd99be39cea000fc
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 10 12:12:14 2023 +0100
+
+    Etape fichier1.md modifé et enregistré
+
+commit 31b7dbac0b0f5dacb9d46e5df7be3c7457d430d3
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 10 11:51:36 2023 +0100
+
+    Ajout de fichier1.md
+
+
+
 
 Se déplacer sur la branchefonctionnalite1
 
@@ -139,7 +172,10 @@ Créer un nouveau fichierfichier3.md
 Modifier le fichierfichier2.md
 
 
-Comment utiliser VS Code pour qu'il nous montre les différences entre l'ancienne version de fichier2.mdet la version courante que l'on vient d'éditer ?
+Comment utiliser VS Code pour qu'il nous montre les différences entre l'ancienne version 
+de fichier2.mdet la version courante que l'on vient d'éditer ?
+	
+
 
 Commettre ces deux modifications : "Fonctionnalité 1 - première phase"
 
@@ -179,7 +215,7 @@ Sur cette représentation, que représente les points ?
 
 Comment voit-on sur quelle branche on est actuellement ?
 
-On considère que la branche originale ( masterou main) est la branche d'intégration, c'est-à-dire celle qui va contenir l'historique de toutes les modifications développées au fur et à mesure dans les branches annexes
+On considère que la branche originale ( master ou main) est la branche d'intégration, c'est-à-dire celle qui va contenir l'historique de toutes les modifications développées au fur et à mesure dans les branches annexes
 
 On va maintenant fusionner la branche fonctionnalite1, qui est terminée, avec la branche d'intégration
 
