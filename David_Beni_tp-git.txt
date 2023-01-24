@@ -162,48 +162,119 @@ Date:   Tue Jan 10 11:51:36 2023 +0100
 
 
 Se déplacer sur la branchefonctionnalite1
+	git add David_Beni_tp-git.txt
+	git commit -m"Fichier réponse David_Beni_tp-git.txt mis à jour"
+	git checkout fonctionnalite1
 
-Lister les succursales
+Lister les branches
+	git log --all
+Ce qu'afiche l'écran : 
+commit 5efb2dbea3db8eb41ea26515402150d7d7c8fcd8 (master)
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 24 10:47:46 2023 +0100
 
-Que représente l'étoile à côté des noms des succursales ?
+    Fichier réponse David_Beni_tp-git.txt mis à jour
 
-Créer un nouveau fichierfichier3.md
+commit 10facd431606d5b479313da6a91590e3e587294d (origin/master)
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 17 12:11:59 2023 +0100
 
-Modifier le fichierfichier2.md
+    Avancé sur le TP-GIT, rapport mis à jour
+
+commit 62a34c26a28ee2dcdca87401b36e6e465bdd7073 (HEAD -> fonctionnalite1)
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 17 11:04:14 2023 +0100
+
+    Ajout de fichier2.md et modification de fichier1.md
+
+commit 2de1bb893c3d3ad63524a940c445f93d642f02f8
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 17 10:48:57 2023 +0100
+
+    Premier enregistrement test
+
+commit 146de3b743e0b943c36d9066cd99be39cea000fc
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 10 12:12:14 2023 +0100
+
+    Etape fichier1.md modifé et enregistré
+
+commit 31b7dbac0b0f5dacb9d46e5df7be3c7457d430d3
+Author: DavidB933 <benidavid75@gmail.com>
+Date:   Tue Jan 10 11:51:36 2023 +0100
+
+    Ajout de fichier1.md
 
 
-Comment utiliser VS Code pour qu'il nous montre les différences entre l'ancienne version 
-de fichier2.mdet la version courante que l'on vient d'éditer ?
+Que représente l'étoile à côté des noms des branches ?
+	L'étoile représente la branche courante, celle sur laquelle on travaille actuellement. 
 	
+Créer un nouveau fichier fichier3.md
+	touch fichier3.md
 
+Modifier le fichier fichier2.md
+	nano fichier2.md
+	J'y ai écrit n'importe quoi juste pour le modifier
+	^X Exit
+	Y Yes
+	
+Comment utiliser VS Code pour qu'il nous montre les différences entre l'ancienne version 
+de fichier2.md et la version courante que l'on vient d'éditer ?
+	Il faut ouvrir le dossier qui contient ce fichier sur VS Code, avoir une première version du fichier2.md ,
+double-cliquer sur fichier2.md dans l'onglet "EXPLORER", cliquer sur "open timeline". 
 
-Commettre ces deux modifications : "Fonctionnalité 1 - première phase"
+Committer ces deux modifications : "Fonctionnalité 1 - première phase"
+	git add David_Beni_tp-git.txt
+	git commit -m"Fonctionnalité 1 - première phase"
 
-Créer un nouveau fichierfichier4.md
+Créer un nouveau fichier fichier4.md
+	touch fichier4.md
 
-Modifier de nouveau le fichierfichier2.md
+Modifier de nouveau le fichier fichier2.md
+	nano fichier2.md
+	J'ai rajouté une ligne en écrivant n'importe quoi
+	^X Exit
+	Y Yes
 
-Commettre ces deux modifications : "Fonctionnalité 1 - terminée"
+Committer ces deux modifications : "Fonctionnalité 1 - terminée"
+	git add David_Beni_tp-git 
+	git commit -m"Fonctionnalité 1 - terminée"
 
 Afficher la liste des fichiers du répertoire
+	ls -a
 
-Se déplacer sur la branchemaster
+Se déplacer sur la branche master
+	git add David_Beni_tp-git.txt
+	git add fichier2.md
+	git add fichier4.md
+	git checkout master
 
 Afficher la liste des fichiers du répertoire
+	ls -a
 
 Pourquoi les deux sorties sont-elles différentes ? Les fichiers ont-ils disparu ?
+	Les sorties sont différentes, fichier3.md et fichier4.md ont disparu. 
 
-Créer une nouvelle succursalefonctionnalite2
+Créer une nouvelle branche fonctionnalite2
+	git branch fonctionnalite2
 
 Cette branche ne va pas avoir toutes les données incluses dans fonctionnalite1. Pourquoi ?
+	Les branches fonctionnalite1 et fonctionnalite2 contiennent des données différentes 
+car ce sont des branches différentes. 
 
-Qu'aurait-il fallu faire si on avait recommandé de démarrer la branche fonctionnalite2en intégrant les modifications récentes de fonctionnalite1 ?
+Qu'aurait-il fallu faire si on avait recommandé de démarrer la branche fonctionnalite2 en 
+intégrant les modifications récentes de fonctionnalite1 ?
+	git checkout fonctionnalite2
+	git merge fonctionnalite1
 
-Se déplacer sur la nouvelle succursalefonctionnalite2
+Se déplacer sur la nouvelle branche fonctionnalite2
+	git checkout fonctionnalite2
 
-Créer un nouveau fichierfichier5.md
+Créer un nouveau fichier fichier5.md
+	touch fichier5.md
 
 Faire un commit en incluant cet ajout : "Ajout fichier5.md"
+	
 
 Entrer la commande git log --oneline --decorate --graph --allpour visualiser, sur le terminal, le graphe des commits sur toutes les branches
 
